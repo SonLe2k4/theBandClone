@@ -1,4 +1,4 @@
-        const buyBtns = document.querySelectorAll('.js-buy-btn')
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
         const btnPay = document.querySelector('.js-pay')
         const closes = document.querySelectorAll('.js-close')
@@ -6,6 +6,7 @@
         function showModal() {
             modal.classList.add('open') 
         }
+        console.log(buyBtns);
         for(const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showModal)
         }
