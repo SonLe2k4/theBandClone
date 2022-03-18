@@ -157,7 +157,7 @@
                     <p><label for="enter-email"><i class="ti-user"></i> Send to</label></p>
                     <input class="form-control" id="enter-email" required type="text" placeholder="Enter email">
                 </div>
-                <button class="btn-pay ">Pay <i class="ti-check"></i></button>
+                <button class="btn-pay js-pay">Pay <i class="ti-check"></i></button>
             </div>
             <div class="footer-modal">
                 <button class="btn-close js-close">Close <i class="icon-footer-close ti-close"></i></button>
@@ -169,84 +169,5 @@
     </div>
 
     <script src="js/main.js"></script>
-    <!-- <script>
-        const btnBuys = document.querySelectorAll('.js-buy-ticket')
-        const btnCloses = document.querySelectorAll('.js-close')
-        const modal = document.querySelector('.js-modal')
-        const containerModal = document.querySelector('.js-container-modal')
-        function showModal() {
-            modal.classList.add('open')
-        }
-        function hideModal() {
-            modal.classList.remove('open')
-        }
-        for(const btnBuy of btnBuys) {
-            btnBuy.addEventListener('click', showModal)
-        }
-        for(const btnClose of btnCloses) {
-            btnClose.addEventListener('click', hideModal)
-        }
-        modal.addEventListener('click', hideModal)
-        containerModal.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-        // bắt sự kiện click vào menu ==> ẩn/hiện nav
-        // var header = document.getElementById('header');
-        // var mobileMenu = document.getElementById('mobile-menu');
-        // var headerHeight = header.clientHeight;
-        // mobileMenu.onclick = function() {
-        //     if(header.clientHeight === headerHeight) {
-        //         header.style.height = "auto";
-        //         header.style.overflow = "visible";
-        //     } else {
-        //         header.style.height = null;
-        //         header.style.overflow = "hidden";
-        //     }
-        // }
-        var header = document.getElementById('header')
-        const mobileMenu = document.getElementById('mobile-menu')
-        var heightHeader = header.clientHeight
-        mobileMenu.onclick = function () {
-            if(header.clientHeight === heightHeader) {
-                header.style.height = 'auto'
-                header.style.overflow = 'visible'
-            } else {
-                header.style.height = null
-                header.style.overflow = 'hidden'
-            }
-        } 
-        // click vào itemMenu sẽ đóng menu, trừ itemMenu có phần tử anh em liền kề
-        // trong classList có class subnav
-        // var menuItems = document.querySelectorAll("#nav li a[href *='#']")
-        // for (var i = 0; i < menuItems.length; i++) {
-        //     var menuItem = menuItems[i];
-        //     menuItem.onclick = function () {
-        //     var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-        //         if(isParentMenu) {
-        //             event.preventDefault();
-        //             header.style.height = "auto";
-        //             header.style.overflow = "visible";
-        //         } else {
-        //             header.style.height = null;
-        //             header.style.overflow = "hidden";
-        //         }
-        //     }
-        // }
-        var menuItems = document.querySelectorAll('#nav li a[href *= "#"]')
-        for(var i = 0; i < menuItems.length; i++) {
-            const menuItem = menuItems[i];
-            menuItem.onclick = function (){
-                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
-                if(isParentMenu) {
-                    event.preventDefault();
-                    header.style.height = 'auto'
-                    header.style.overflow = 'visible'
-                } else {
-                    header.style.height = null
-                    header.style.overflow = 'hidden'
-                }         
-            }
-        }
-    </script> -->
 </body>
 </html>
