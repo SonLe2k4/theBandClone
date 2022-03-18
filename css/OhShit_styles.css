@@ -29,6 +29,11 @@ html {
     z-index: 1;
 }
 
+#header.openInMobile {
+    height: auto;
+    overflow: visible;
+}
+
 #nav {
     display: inline-block;
 }
