@@ -8,7 +8,6 @@ const containerModal = document.querySelector('.js-container-modal')
 function showModal() {
     modal.classList.add('open') 
 }
-console.log(buyBtns);
 for(const buyBtn of buyBtns) {
     buyBtn.addEventListener('click', showModal)
 }
