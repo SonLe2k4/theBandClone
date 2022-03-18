@@ -1,0 +1,116 @@
+/* PC */
+@media (min-width: 1024px) {
+    #header .header-menu {
+        display: none;
+    }
+    #header {
+        overflow: visible !important;
+    }
+}
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+    
+}
+/* Tablet */
+@media (max-width: 1023px) and (min-width:  740px) {
+    #header .header-menu {
+        display: none;
+    }
+    #header {
+        overflow: visible;
+    }
+}
+/* Mobile */
+@media (max-width:  739px) {
+    .container-member .each-member {
+        width: 60%;
+    }
+    .container-member .each-member:nth-child(2) {
+        margin: 8px 0;
+    }
+    .container-slider {
+        display: none;
+    }
+    #nav > li:nth-child(1) {
+        max-width: 94px;
+    }
+    #nav .subnav li {
+        padding: 5px 24px;
+    }
+    #nav .subnav {
+        background-color: #555;
+    }
+    #nav .subnav a {
+        color: #fff;
+    }
+    #nav .subnav,
+    #nav {
+        width: 100%;
+    }
+    #nav li {
+        display: block;
+        padding: 1px 0;
+    }
+    /* Dieu kien can cho thanh menu xo xuong 
+    #header {
+        height: auto;
+        overflow: visible;
+    }
+    */
+
+    /* dieu kien can cho thanh menu an di: */
+    #header {
+        overflow: hidden;
+    }
+    #header .header-search {
+        display: none;
+    }
+    #header .header-menu {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 0;
+        right: 0;
+    }
+    #contact .input-Name-Email,
+    .container-contact {
+        flex-direction: column;
+    }
+    .container-tour .list-places,
+    .container-member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-tour .each-place {
+        width: 100%;
+    }
+    .input-contact .input-email,
+    .input-contact .input-name {
+        max-width: none;
+    }
+    .input-contact .input-name {
+        margin-bottom: 8px;
+    }
+    .list-places .buy-btn {
+        padding: 13px 16px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    #contact .input-name,
+    #contact .input-email,
+    #contact .input-message,
+    .modal .form-control{
+        padding: 11px 8px;
+    }
+    #contact .address-contact > p {
+        padding: 2px 0;
+    }
+    .footer-modal .btn-close,
+    .input-contact .send-btn {
+        max-width: none;
+        padding: 15px 16px;
+    }
+    #footer a {
+        padding: 3px;
+    }
+}
